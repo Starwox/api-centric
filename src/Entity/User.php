@@ -29,9 +29,9 @@ class User implements UserInterface
     private $email;
 
     /**
-     * @ORM\Column(type="json")
+     * @ORM\Column(type="string", nullable=true)
      */
-    private $roles = [];
+    private $roles;
 
     /**
      * @var string The hashed password
@@ -48,6 +48,32 @@ class User implements UserInterface
      * @ORM\Column(type="datetime")
      */
     private $startedAt;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $firstname;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $lastname;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $age;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $job;
+
+    public function __construct()
+    {
+        $this->startedAt = new \DateTime('now');
+        $this->active = true;
+    }
 
     public function getId(): ?int
     {
@@ -150,6 +176,54 @@ class User implements UserInterface
     public function setStartedAt(\DateTimeInterface $startedAt): self
     {
         $this->startedAt = $startedAt;
+
+        return $this;
+    }
+
+    public function getFirstname(): ?string
+    {
+        return $this->firstname;
+    }
+
+    public function setFirstname(string $firstname): self
+    {
+        $this->firstname = $firstname;
+
+        return $this;
+    }
+
+    public function getLastname(): ?string
+    {
+        return $this->lastname;
+    }
+
+    public function setLastname(string $lastname): self
+    {
+        $this->lastname = $lastname;
+
+        return $this;
+    }
+
+    public function getAge(): ?int
+    {
+        return $this->age;
+    }
+
+    public function setAge(?int $age): self
+    {
+        $this->age = $age;
+
+        return $this;
+    }
+
+    public function getJob(): ?string
+    {
+        return $this->job;
+    }
+
+    public function setJob(?string $job): self
+    {
+        $this->job = $job;
 
         return $this;
     }
