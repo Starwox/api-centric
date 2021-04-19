@@ -44,7 +44,7 @@ class DefaultController extends AbstractController
      *     message = "You've entered an invalid Json."
      * )
      */
-    public function getAllUsers(): JsonResponse
+    public function getAllUsers()
     {
         $users = $this->em->getRepository(User::class)->findAll();
         return $this->json([
