@@ -22,13 +22,6 @@ class DefaultController extends AbstractController
      */
     public function index(EntityManagerInterface $em): Response
     {
-        $data = new User();
-        $data->setActive(1);
-        $data->setEmail("test@test");
-        $data->setPassword("test");
-        $data->setRoles(["role"]);
-        $data->setStartedAt(new \DateTime("now"));
-
         return $this->render('base.html.twig');
     }
 
