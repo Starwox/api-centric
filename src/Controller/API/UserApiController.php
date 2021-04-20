@@ -15,12 +15,12 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Validator\Constraints as Assert;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 
 
 /**
- * @Route("/test", name="users_api")
+ * @Route("/api", name="users_api")
  */
 class UserApiController extends AbstractController
 {
@@ -117,27 +117,108 @@ class UserApiController extends AbstractController
     }
 
     /**
-     * @Route("/delete-user/{id}", name="delete_user", methods={"GET"})
+     * @Route("/delete-user/{id}", name="delete_user", methods={"GET"}, requirements={"id"="\d+"})
      */
-    public function removeUser(User $user, $id): JsonResponse
+    public function removeUser($id): JsonResponse
     {
         $repository = $this->getDoctrine()->getRepository(User::class);
-
         $user = $repository->find($id);
+
         if (empty($user)) {
             return $this->json([
                 "status" => 400,
-                "operation" => "Not found"
+                "data" => "Not found"
             ]);
         }
 
         $this->em->remove($user);
         $this->em->flush();
 
+        return $this->json([
+            "status" => 200,
+            "data" => "Deleted"
+        ]);
+    }
+
+
+    /**
+     * @Route("/edit-user/{id}", name="edit_user", methods={"POST"}, requirements={"id"="\d+"})
+     */
+    public function editUser($id, Request $request): JsonResponse
+    {
+        $email = $request->request->get('email');
+        $plainPassword = $request->request->get('password');
+        $job = $request->request->get('$job');
+        $firstName = $request->request->get('firstName');
+        $lastname = $request->request->get('lastname');
+        $age = $request->request->get('age');
+
+        $options = [
+            'cost' => 12,
+        ];
+        $password = password_hash($plainPassword, PASSWORD_BCRYPT, $options);
+
+        $repository = $this->getDoctrine()->getRepository(User::class);
+        $user = $repository->find($id);
+
+        if ($email !== $user->getEmail())
+            $user->setEmail($email);
+
+        if ($password !== $user->getPassword())
+            $user->setPassword($password);
+
+        if ($job !== $user->getJob())
+            $user->setJob($job);
+
+        if ($firstName !== $user->getFirstName())
+            $user->setFirstName($firstName);
+
+        if ($lastname !== $user->getLastname())
+            $user->setLastname($lastname);
+
+        if ($age !== $user->getAge())
+            $user->setAge($age);
+
+        $this->em->persist($user);
+        $this->em->flush();
 
         return $this->json([
             "status" => 200,
-            "operation" => "Deleted"
+            "data" => "success"
+        ]);
+    }
+
+    /**
+     * @Route("/login", name="login_user", methods={"POST"})
+     * @Assert\Json(
+     *     message = "You've entered an invalid Json."
+     * )
+     */
+    public function login(Request $request): JsonResponse
+    {
+        $email = $request->request->get('email');
+        $plainPassword = $request->request->get('password');
+
+        $options = [
+            'cost' => 12,
+        ];
+        $password = password_hash($plainPassword, PASSWORD_BCRYPT, $options);
+
+        $user = $this->em->getRepository(User::class)->findBy([
+            "email" => $email,
+            "password" => $password
+        ]);
+
+        if (empty($user)) {
+            return $this->json([
+                "status" => 404,
+                "data" => "User not found"
+            ]);
+        }
+
+        return $this->json([
+            "status" => 200,
+            "data" => $user
         ]);
     }
 }
