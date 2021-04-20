@@ -73,6 +73,7 @@ class User implements UserInterface
     {
         $this->startedAt = new \DateTime('now');
         $this->active = true;
+        $roles[] = 'ROLE_USER';
     }
 
     public function getId(): ?int
@@ -109,7 +110,6 @@ class User implements UserInterface
     {
         $roles = $this->roles;
         // guarantee every user at least has ROLE_USER
-        $roles[] = 'ROLE_USER';
 
         return array_unique($roles);
     }
