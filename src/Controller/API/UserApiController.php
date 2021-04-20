@@ -124,6 +124,20 @@ class UserApiController extends AbstractController
         $repository = $this->getDoctrine()->getRepository(User::class);
 
         $user = $repository->find($id);
-        return new JsonResponse($user);
+        if (empty($user)) {
+            return $this->json([
+                "status" => 400,
+                "operation" => "Not found"
+            ]);
+        }
+
+        $this->em->remove($user);
+        $this->em->flush();
+
+
+        return $this->json([
+            "status" => 200,
+            "operation" => "Deleted"
+        ]);
     }
 }
