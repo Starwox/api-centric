@@ -15,23 +15,22 @@ terraform {
   }
 }
 
-variable "rhdelivery" {
+variable "deliveryrh" {
   description = "Name of the Heroku app provisioned as an example"
 }
 
 resource "heroku_app" "delivery" {
-  name   = "rhdelivery"
+  name   = "deliveryrh"
   region = "eu"
 }
 
 # Build code & release to the app
 resource "heroku_build" "delivery" {
   app        = heroku_app.delivery.name
-  buildpacks = ["https://github.com/Starwox/api-centric.git"]
+  buildpacks = ["https://github.com/heroku/heroku-buildpack-php"]
 
   source {
-    url     = "https://github.com/mars/cra-example-app/archive/v2.1.1.tar.gz"
-    version = "2.1.1"
+    url     = "https://github.com/Starwox/api-centric.git"
   }
 }
 

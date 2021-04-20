@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="583e5cac-3f83-4cc5-86e2-14a91ac486c4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/api-centric.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api-centric.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.buildpacks" beforeDir="false" afterPath="$PROJECT_DIR$/.buildpacks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.terraform/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/.terraform/terraform.tfstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,7 +104,7 @@
           <file leaf-file-name=".env" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.env">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="304">
+                <state relative-caret-position="93">
                   <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
                 </state>
               </provider>
@@ -126,20 +126,29 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.tf" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.tf" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.tf">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+                <state relative-caret-position="122">
+                  <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="63" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".buildpacks" pinned="false" current-in-tab="false">
+          <file leaf-file-name=".buildpacks" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.buildpacks">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="19">
-                  <caret line="1" column="42" selection-start-line="1" selection-end-line="1" selection-end-column="42" />
+                <state>
+                  <caret column="50" selection-start-column="50" selection-end-column="50" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="terraform.tfstate" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.terraform/terraform.tfstate">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="101">
+                  <caret line="7" column="185" selection-start-line="7" selection-start-column="185" selection-end-line="7" selection-end-column="185" />
                 </state>
               </provider>
             </entry>
@@ -162,7 +171,12 @@
       <find>city</find>
       <find>post</find>
       <find>roles</find>
+      <find>azyeqmsrtvuvgt</find>
+      <find>c</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -190,9 +204,10 @@
         <option value="$PROJECT_DIR$/src/Controller/API/EventApiController.php" />
         <option value="$PROJECT_DIR$/src/Controller/API/UserApiController.php" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/.buildpacks" />
-        <option value="$PROJECT_DIR$/main.tf" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/.terraform/terraform.tfstate" />
+        <option value="$PROJECT_DIR$/main.tf" />
+        <option value="$PROJECT_DIR$/.buildpacks" />
       </list>
     </option>
   </component>
@@ -343,6 +358,11 @@
               <item name="api-centric" type="b2602c69:ProjectViewProjectNode" />
               <item name="api-centric" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="api-centric" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-centric" type="462c0819:PsiDirectoryNode" />
+              <item name=".terraform" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -389,30 +409,43 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41428000" />
+    <option name="totallyTimeSpent" value="43810000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1680" height="945" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3297362" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.49643704" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.41092637" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297362" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.41092637" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,9 +460,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -583,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -710,35 +733,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/API/UserApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="10" selection-start-line="10" selection-end-line="18" selection-end-column="68" />
+        <state relative-caret-position="1064">
+          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
           <folding>
             <element signature="e#122#142#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.buildpacks">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="42" selection-start-line="1" selection-end-line="1" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt" />
     <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -751,8 +754,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="93">
           <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1805">
+          <caret line="95" column="34" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.terraform/terraform.tfstate">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="7" column="185" selection-start-line="7" selection-start-column="185" selection-end-line="7" selection-end-column="185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.buildpacks">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50" selection-start-column="50" selection-end-column="50" />
         </state>
       </provider>
     </entry>

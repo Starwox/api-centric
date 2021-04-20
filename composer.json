@@ -93,6 +93,8 @@
             "@auto-scripts"
         ],
         "compile": [
+            "php bin/console d:d:d",
+            "php bin/console d:d:c",
             "php bin/console d:m:m"
         ]
     },
