@@ -73,12 +73,12 @@ class UserApiController extends AbstractController
             $lastname = $jsonId['lastname'];
         }
 
-        if (empty($job)) {
+        /*if (empty($job)) {
             $jsonId = json_decode(file_get_contents("php://input"), true);
 
             $job = $jsonId['job'];
 
-        }
+        }*/
 
         if (empty($email)) {
             $jsonId = json_decode(file_get_contents("php://input"), true);

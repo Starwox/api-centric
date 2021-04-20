@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="583e5cac-3f83-4cc5-86e2-14a91ac486c4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/API/UserApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/API/UserApiController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,11 +30,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="UserApiController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserApiController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/API/UserApiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="18" column="54" lean-forward="true" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+            <state relative-caret-position="218">
+              <caret line="78" column="28" lean-forward="true" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
               <folding>
                 <element signature="e#122#142#0#PHP" expanded="true" />
                 <element signature="e#1540#1685#0#PHP" />
@@ -68,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -137,7 +137,6 @@
         <option value="$PROJECT_DIR$/config/routes/annotations.yaml" />
         <option value="$PROJECT_DIR$/config/packages/api_platform.yaml" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/Controller/API/UserApiController.php" />
         <option value="$PROJECT_DIR$/apache_app.conf" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
@@ -147,6 +146,7 @@
         <option value="$PROJECT_DIR$/config/bundles.php" />
         <option value="$PROJECT_DIR$/config/packages/framework.yaml" />
         <option value="$PROJECT_DIR$/public/.htaccess" />
+        <option value="$PROJECT_DIR$/src/Controller/API/UserApiController.php" />
       </list>
     </option>
   </component>
@@ -370,7 +370,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24920000" />
+    <option name="totallyTimeSpent" value="25138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1680" height="937" extended-state="6" />
@@ -676,16 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-          <folding>
-            <element signature="e#118#138#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/nelmio_cors.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -714,21 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/API/UserApiController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="18" column="54" lean-forward="true" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-          <folding>
-            <element signature="e#122#142#0#PHP" expanded="true" />
-            <element signature="e#1540#1685#0#PHP" />
-            <element signature="e#1821#1978#0#PHP" />
-            <element signature="e#2322#2467#0#PHP" />
-            <element signature="e#1694#1839#0#PHP" />
-            <element signature="e#2459#2604#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/api_platform.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -750,6 +725,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+          <folding>
+            <element signature="e#118#138#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/API/UserApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="78" column="28" lean-forward="true" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
+          <folding>
+            <element signature="e#122#142#0#PHP" expanded="true" />
+            <element signature="e#1540#1685#0#PHP" />
+            <element signature="e#1821#1978#0#PHP" />
+            <element signature="e#2322#2467#0#PHP" />
+            <element signature="e#1694#1839#0#PHP" />
+            <element signature="e#2459#2604#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
