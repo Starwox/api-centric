@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="583e5cac-3f83-4cc5-86e2-14a91ac486c4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.buildpacks" beforeDir="false" afterPath="$PROJECT_DIR$/.buildpacks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.terraform/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/.terraform/terraform.tfstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -128,11 +124,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.tf" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.tf" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.tf">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="122">
-                  <caret line="29" column="63" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="63" />
+                <state relative-caret-position="116">
+                  <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -146,20 +142,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/composer.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name=".buildpacks" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.buildpacks">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
-                  <caret column="50" selection-start-column="50" selection-end-column="50" />
+                  <caret column="14" selection-start-column="8" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -167,8 +154,8 @@
           <file leaf-file-name="terraform.tfstate" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.terraform/terraform.tfstate">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="101">
-                  <caret line="7" column="185" selection-start-line="7" selection-start-column="185" selection-end-line="7" selection-end-column="185" />
+                <state relative-caret-position="76">
+                  <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -224,10 +211,10 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/.terraform/terraform.tfstate" />
-        <option value="$PROJECT_DIR$/main.tf" />
         <option value="$PROJECT_DIR$/.buildpacks" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/main.tf" />
       </list>
     </option>
   </component>
@@ -429,7 +416,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44064000" />
+    <option name="totallyTimeSpent" value="44969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1680" height="945" extended-state="0" />
@@ -772,24 +759,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1776">
+          <caret line="95" column="42" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.terraform/terraform.tfstate">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="7" column="185" selection-start-line="7" selection-start-column="185" selection-end-line="7" selection-end-column="185" />
+        <state relative-caret-position="76">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.buildpacks">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="50" selection-start-column="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.tf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="29" column="63" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="63" />
+          <caret column="14" selection-start-column="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -800,10 +787,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/main.tf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+        <state relative-caret-position="116">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
         </state>
       </provider>
     </entry>

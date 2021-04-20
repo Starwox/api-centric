@@ -11,8 +11,6 @@ terraform {
       version = "4.2.0"
     }
   }
-  backend "pg" {
-  }
 }
 
 variable "deliveryrh" {
@@ -27,10 +25,9 @@ resource "heroku_app" "delivery" {
 # Build code & release to the app
 resource "heroku_build" "delivery" {
   app        = heroku_app.delivery.name
-  buildpacks = ["https://github.com/heroku/heroku-buildpack-php"]
-
   source {
-    url     = "https://github.com/Starwox/api-centric.git"
+    # This app uses a community buildpack, set it in `buildpacks` above.
+    path     = "./"
   }
 }
 
