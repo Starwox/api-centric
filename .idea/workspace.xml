@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="583e5cac-3f83-4cc5-86e2-14a91ac486c4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.buildpacks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/api-centric.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api-centric.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.tf" beforeDir="false" afterPath="$PROJECT_DIR$/main.tf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,10 +18,10 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.28820598">
+    <splitter split-orientation="horizontal" split-proportion="0.4003322">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="19">
@@ -100,7 +101,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+          <file leaf-file-name=".env" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.env">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="304">
@@ -125,20 +126,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.tf" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.tf" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.tf">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="13">
-                  <caret line="27" selection-start-line="27" selection-end-line="35" selection-end-column="1" />
+                <state relative-caret-position="108">
+                  <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name=".buildpacks" pinned="false" current-in-tab="true">
+          <file leaf-file-name=".buildpacks" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.buildpacks">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="38">
-                  <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+                <state relative-caret-position="19">
+                  <caret line="1" column="42" selection-start-line="1" selection-end-line="1" selection-end-column="42" />
                 </state>
               </provider>
             </entry>
@@ -185,13 +186,13 @@
         <option value="$PROJECT_DIR$/config/bundles.php" />
         <option value="$PROJECT_DIR$/config/packages/framework.yaml" />
         <option value="$PROJECT_DIR$/public/.htaccess" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Controller/API/EventApiController.php" />
         <option value="$PROJECT_DIR$/src/Controller/API/UserApiController.php" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/main.tf" />
         <option value="$PROJECT_DIR$/.buildpacks" />
+        <option value="$PROJECT_DIR$/main.tf" />
+        <option value="$PROJECT_DIR$/.env" />
       </list>
     </option>
   </component>
@@ -309,14 +310,6 @@
       <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
       <path value="$PROJECT_DIR$/vendor/namshi/jose" />
       <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
-      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
-      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
-      <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
-      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
-      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
-      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
-      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
-      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
       <path value="$PROJECT_DIR$/vendor/psr/http-client" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
@@ -324,6 +317,12 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -385,16 +384,15 @@
       <workItem from="1618819851408" duration="1415000" />
       <workItem from="1618832514197" duration="1698000" />
       <workItem from="1618835363152" duration="478000" />
-      <workItem from="1618950566407" duration="4542000" />
+      <workItem from="1618950566407" duration="5433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40537000" />
+    <option name="totallyTimeSpent" value="41428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1680" height="945" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -405,7 +403,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3297362" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.6033254" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.41092637" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -693,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Event.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
@@ -717,20 +708,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding>
-            <element signature="e#30#64#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/API/UserApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+        <state relative-caret-position="95">
+          <caret line="10" selection-start-line="10" selection-end-line="18" selection-end-column="68" />
           <folding>
             <element signature="e#122#142#0#PHP" expanded="true" />
           </folding>
@@ -744,17 +725,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.tf">
+    <entry file="file://$PROJECT_DIR$/.buildpacks">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="27" selection-start-line="27" selection-end-line="35" selection-end-column="1" />
+        <state relative-caret-position="19">
+          <caret line="1" column="42" selection-start-line="1" selection-end-line="1" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.buildpacks">
+    <entry file="file://$PROJECT_DIR$/main.tf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+        <state relative-caret-position="108">
+          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <element signature="e#30#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>

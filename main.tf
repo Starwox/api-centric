@@ -27,7 +27,7 @@ resource "heroku_app" "delivery" {
 # Build code & release to the app
 resource "heroku_build" "delivery" {
   app        = heroku_app.delivery.name
-  buildpacks = ["https://github.com/mars/create-react-app-buildpack.git"]
+  buildpacks = ["https://github.com/Starwox/api-centric.git"]
 
   source {
     url     = "https://github.com/mars/cra-example-app/archive/v2.1.1.tar.gz"
