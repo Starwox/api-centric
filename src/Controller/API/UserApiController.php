@@ -98,17 +98,18 @@ class UserApiController extends AbstractController
             $age = $jsonId['age'];
         }
 
-        $user = new User();
-        $password = $encoder->encodePassword($user, $plainPassword);
+        $options = [
+            'cost' => 12,
+        ];
+        $password = password_hash($plainPassword, PASSWORD_BCRYPT, $options);
 
+        $user = new User();
         $user->setEmail($email);
         $user->setPassword($password);
         $user->setFirstname($firstName);
         $user->setLastname($lastname);
         $user->setAge($age);
         $user->setJob($job);
-        $roles[] = 'ROLE_USER';
-        $user->setRoles($roles);
 
         $this->em->persist($user);
         $this->em->flush($user);
