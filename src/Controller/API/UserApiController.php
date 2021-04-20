@@ -107,6 +107,8 @@ class UserApiController extends AbstractController
         $user->setLastname($lastname);
         $user->setAge($age);
         $user->setJob($job);
+        $roles[] = 'ROLE_USER';
+        $user->setRoles($roles);
 
         $this->em->persist($user);
         $this->em->flush($user);
