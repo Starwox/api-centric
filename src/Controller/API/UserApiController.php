@@ -91,11 +91,7 @@ class UserApiController extends AbstractController
 
             $age = $jsonId['age'];
         }
-
-        $options = [
-            'cost' => 12,
-        ];
-        $password = password_hash($plainPassword, PASSWORD_BCRYPT, $options);
+        $password = password_hash( $plainPassword, PASSWORD_DEFAULT);
 
         $user = new User();
         $user->setEmail($email);
@@ -153,10 +149,7 @@ class UserApiController extends AbstractController
         $lastname = $request->request->get('lastname');
         $age = $request->request->get('age');
 
-        $options = [
-            'cost' => 12,
-        ];
-        $password = password_hash($plainPassword, PASSWORD_BCRYPT, $options);
+        $password = password_hash( $plainPassword, PASSWORD_DEFAULT);
 
         $repository = $this->getDoctrine()->getRepository(User::class);
         $user = $repository->find($id);
@@ -199,12 +192,8 @@ class UserApiController extends AbstractController
         $email = $request->request->get('email');
         $plainPassword = $request->request->get('password');
 
-        $options = [
-            'cost' => 12,
-        ];
-        $password = password_hash($plainPassword, PASSWORD_BCRYPT, $options);
+        $password = password_hash( $plainPassword, PASSWORD_DEFAULT);
 
-        dd($password);
         $user = $this->em->getRepository(User::class)->findBy([
             "email" => $email,
             "password" => $password
