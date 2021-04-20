@@ -204,6 +204,7 @@ class UserApiController extends AbstractController
         ];
         $password = password_hash($plainPassword, PASSWORD_BCRYPT, $options);
 
+        dd($password);
         $user = $this->em->getRepository(User::class)->findBy([
             "email" => $email,
             "password" => $password
