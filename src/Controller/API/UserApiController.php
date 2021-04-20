@@ -56,10 +56,10 @@ class UserApiController extends AbstractController
         // DATA POST
         $email = $request->request->get('email');
         $plainPassword = $request->request->get('password');
-        $job = $request->request->get('$job');
-        $firstName = $request->request->get('firstName');
+        $firstName = $request->request->get('firstname');
         $lastname = $request->request->get('lastname');
         $age = $request->request->get('age');
+        $job = $request->request->get('job');
 
         // CHECKER
         if (empty($firstName)) {
@@ -91,7 +91,14 @@ class UserApiController extends AbstractController
 
             $age = $jsonId['age'];
         }
-        $password = password_hash( $plainPassword, PASSWORD_DEFAULT);
+
+        if (empty($job)) {
+            $jsonId = json_decode(file_get_contents("php://input"), true);
+
+            $job = $jsonId['job'];
+        }
+
+        $password = password_hash($plainPassword, PASSWORD_DEFAULT);
 
         $user = new User();
         $user->setEmail($email);
@@ -163,8 +170,8 @@ class UserApiController extends AbstractController
         if ($job !== $user->getJob())
             $user->setJob($job);
 
-        if ($firstName !== $user->getFirstName())
-            $user->setFirstName($firstName);
+        if ($firstName !== $user->getFirstname())
+            $user->setFirstname($firstName);
 
         if ($lastname !== $user->getLastname())
             $user->setLastname($lastname);
@@ -190,25 +197,33 @@ class UserApiController extends AbstractController
     public function login(Request $request): JsonResponse
     {
         $email = $request->request->get('email');
-        $plainPassword = $request->request->get('password');
-
-        $password = password_hash( $plainPassword, PASSWORD_DEFAULT);
+        $password = $request->request->get('password');
 
         $user = $this->em->getRepository(User::class)->findBy([
-            "email" => $email,
-            "password" => $password
+            "email" => $email
         ]);
 
-        if (empty($user)) {
+        $encoded = password_verify($password, $user[0]->getPassword());
+
+        if (empty($user) OR !$encoded) {
             return $this->json([
                 "status" => 404,
-                "data" => "User not found"
+                "data" => "User not found or incorrect Password"
             ]);
         }
 
         return $this->json([
             "status" => 200,
-            "data" => $user
+            "data" => [
+                "id" => $user[0]->getId(),
+                "email" => $user[0]->getEmail(),
+                "active" => $user[0]->getActive(),
+                "startedAt" => $user[0]->getStartedAt()->format('Y-m-d H:i:s'),
+                "firstname" => $user[0]->getFirstname(),
+                "lastname" => $user[0]->getLastname(),
+                "age" => $user[0]->getAge(),
+                "job" => $user[0]->getJob(),
+            ]
         ]);
     }
 }
