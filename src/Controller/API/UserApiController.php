@@ -50,9 +50,10 @@ class UserApiController extends AbstractController
      *     message = "You've entered an invalid Json."
      * )
      */
-    public function addUser(Request $request, UserPasswordEncoderInterface $encoder): JsonResponse
+    public function addUser(Request $request): JsonResponse
     {
 
+        // DATA POST
         $email = $request->request->get('email');
         $plainPassword = $request->request->get('password');
         $job = $request->request->get('$job');
@@ -72,13 +73,6 @@ class UserApiController extends AbstractController
 
             $lastname = $jsonId['lastname'];
         }
-
-        /*if (empty($job)) {
-            $jsonId = json_decode(file_get_contents("php://input"), true);
-
-            $job = $jsonId['job'];
-
-        }*/
 
         if (empty($email)) {
             $jsonId = json_decode(file_get_contents("php://input"), true);
@@ -120,5 +114,16 @@ class UserApiController extends AbstractController
         ]);
 
         return $response;
+    }
+
+    /**
+     * @Route("/delete-user/{id}", name="delete_user", methods={"GET"})
+     */
+    public function removeUser(User $user, $id): JsonResponse
+    {
+        $repository = $this->getDoctrine()->getRepository(User::class);
+
+        $user = $repository->find($id);
+        return new JsonResponse($user);
     }
 }
