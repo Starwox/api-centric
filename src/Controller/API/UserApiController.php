@@ -76,7 +76,7 @@ class UserApiController extends AbstractController
         if (empty($job)) {
             $jsonId = json_decode(file_get_contents("php://input"), true);
 
-            $job = $jsonId['$job'];
+            $job = $jsonId['job'];
 
         }
 
