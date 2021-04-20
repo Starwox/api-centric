@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="583e5cac-3f83-4cc5-86e2-14a91ac486c4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform.tfstate.backup" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfstate.backup" afterDir="false" />
-    </list>
+    <list default="true" id="583e5cac-3f83-4cc5-86e2-14a91ac486c4" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -425,7 +422,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45567000" />
+    <option name="totallyTimeSpent" value="45792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1680" height="945" extended-state="0" />
