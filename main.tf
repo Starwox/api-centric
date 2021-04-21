@@ -27,7 +27,7 @@ resource "heroku_build" "delivery" {
   app        = heroku_app.delivery.name
   source {
     # This app uses a community buildpack, set it in `buildpacks` above.
-    url     = "https://github.com/Starwox/api-centric.git"
+    path     = "./"
   }
 }
 
